@@ -1,7 +1,10 @@
 \usepackage[ruled]{algorithm2e}
+\usepackage[inline, shortlabels]{enumitem}
 \usepackage{hyperref}
-\usepackage{microtype}
+\usepackage[super]{nth}
 \usepackage{pifont}
+\usepackage{soul}
+\usepackage{tcolorbox}
 \usepackage{xcolor}
 \usepackage{xurl}
 % Figures and Tables
@@ -10,8 +13,8 @@
 % Monospaced Code Blocks
 \usepackage{listings}
 % Math Packages
-\usepackage{amsmath, amsfonts, amsthm}
 \usepackage{nicefrac}
+\usepackage{amsmath, amsthm}
 
 \lstset{
   backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
@@ -41,7 +44,11 @@
   tabsize=4,                       % sets default tabsize to 4 spaces
 }
 
-\newtheorem{theorem}{Theorem}[section]
+\hypersetup{
+  colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue, anchorcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}
 \newtheorem{claim}[theorem]{Claim}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
